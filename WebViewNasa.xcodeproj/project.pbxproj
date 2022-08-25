@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		73C3230528B79A5F0068BB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3230428B79A5F0068BB48 /* AppDelegate.swift */; };
 		73C3230728B79A5F0068BB48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3230628B79A5F0068BB48 /* SceneDelegate.swift */; };
-		73C3230928B79A5F0068BB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3230828B79A5F0068BB48 /* ViewController.swift */; };
+		73C3230928B79A5F0068BB48 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3230828B79A5F0068BB48 /* WebViewVC.swift */; };
 		73C3230C28B79A5F0068BB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C3230A28B79A5F0068BB48 /* Main.storyboard */; };
 		73C3230E28B79A640068BB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C3230D28B79A640068BB48 /* Assets.xcassets */; };
 		73C3231128B79A640068BB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C3230F28B79A640068BB48 /* LaunchScreen.storyboard */; };
 		73C3231C28B79A650068BB48 /* WebViewNasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3231B28B79A650068BB48 /* WebViewNasaTests.swift */; };
 		73C3232628B79A650068BB48 /* WebViewNasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3232528B79A650068BB48 /* WebViewNasaUITests.swift */; };
 		73C3232828B79A650068BB48 /* WebViewNasaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3232728B79A650068BB48 /* WebViewNasaUITestsLaunchTests.swift */; };
+		73C3233528B7AD6C0068BB48 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C3233428B7AD6C0068BB48 /* VideoVC.swift */; };
+		73C3233728B7AE3C0068BB48 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 73C3233628B7ADFC0068BB48 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		73C3230128B79A5F0068BB48 /* WebViewNasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewNasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C3230428B79A5F0068BB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73C3230628B79A5F0068BB48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73C3230828B79A5F0068BB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73C3230828B79A5F0068BB48 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		73C3230B28B79A5F0068BB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73C3230D28B79A640068BB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C3231028B79A640068BB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		73C3232128B79A650068BB48 /* WebViewNasaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewNasaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C3232528B79A650068BB48 /* WebViewNasaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewNasaUITests.swift; sourceTree = "<group>"; };
 		73C3232728B79A650068BB48 /* WebViewNasaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewNasaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		73C3233428B7AD6C0068BB48 /* VideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		73C3233628B7ADFC0068BB48 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				73C3230428B79A5F0068BB48 /* AppDelegate.swift */,
 				73C3230628B79A5F0068BB48 /* SceneDelegate.swift */,
-				73C3230828B79A5F0068BB48 /* ViewController.swift */,
+				73C3230828B79A5F0068BB48 /* WebViewVC.swift */,
+				73C3233428B7AD6C0068BB48 /* VideoVC.swift */,
+				73C3233628B7ADFC0068BB48 /* video.mp4 */,
 				73C3230A28B79A5F0068BB48 /* Main.storyboard */,
 				73C3230D28B79A640068BB48 /* Assets.xcassets */,
 				73C3230F28B79A640068BB48 /* LaunchScreen.storyboard */,
@@ -234,6 +240,7 @@
 				73C3231128B79A640068BB48 /* LaunchScreen.storyboard in Resources */,
 				73C3230E28B79A640068BB48 /* Assets.xcassets in Resources */,
 				73C3230C28B79A5F0068BB48 /* Main.storyboard in Resources */,
+				73C3233728B7AE3C0068BB48 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C3230928B79A5F0068BB48 /* ViewController.swift in Sources */,
+				73C3233528B7AD6C0068BB48 /* VideoVC.swift in Sources */,
+				73C3230928B79A5F0068BB48 /* WebViewVC.swift in Sources */,
 				73C3230528B79A5F0068BB48 /* AppDelegate.swift in Sources */,
 				73C3230728B79A5F0068BB48 /* SceneDelegate.swift in Sources */,
 			);

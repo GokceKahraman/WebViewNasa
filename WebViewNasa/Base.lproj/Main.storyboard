@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Aq2-8S-p2I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,20 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Nasa-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebViewNasa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WebViewVC" customModule="WebViewNasa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYN-Cj-Onq">
-                                <rect key="frame" x="20" y="89" width="374" height="550"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="720"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="550" id="kQL-rR-D02"/>
-                                </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -31,21 +28,79 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dYN-Cj-Onq" secondAttribute="trailing" constant="20" id="8Rs-qc-jsm"/>
-                            <constraint firstItem="dYN-Cj-Onq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IcP-tw-Hpi"/>
-                            <constraint firstItem="dYN-Cj-Onq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="fFv-uG-mS0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dYN-Cj-Onq" secondAttribute="bottom" id="JjT-UT-N1f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dYN-Cj-Onq" secondAttribute="trailing" id="UEE-LM-r09"/>
+                            <constraint firstItem="dYN-Cj-Onq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gtn-Pt-wfI"/>
+                            <constraint firstItem="dYN-Cj-Onq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lnK-ox-mhJ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Nasa" image="moon.stars" catalog="system" selectedImage="moon.stars" id="vmX-Vq-63f"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="webview" destination="dYN-Cj-Onq" id="CFQ-rf-0v7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="MRm-A9-aG9">
+            <objects>
+                <viewController id="15T-4r-fYq" customClass="VideoVC" customModule="WebViewNasa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A4B-e9-fNi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ys-wF-WUP">
+                                <rect key="frame" x="88" y="182" width="238" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Watch Me">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="watch:" destination="15T-4r-fYq" eventType="touchUpInside" id="fim-yj-w1M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Kg-BH-wMF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ys-wF-WUP" firstAttribute="top" secondItem="0Kg-BH-wMF" secondAttribute="top" constant="138" id="8w9-qO-SIh"/>
+                            <constraint firstItem="0Kg-BH-wMF" firstAttribute="trailing" secondItem="2Ys-wF-WUP" secondAttribute="trailing" constant="88" id="UuD-VM-T3Y"/>
+                            <constraint firstItem="2Ys-wF-WUP" firstAttribute="leading" secondItem="0Kg-BH-wMF" secondAttribute="leading" constant="88" id="bqz-gg-CXA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video" image="tv" catalog="system" selectedImage="tv" id="Rsx-DW-38x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYT-GR-hAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="118"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UFo-5b-XbB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Aq2-8S-p2I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pKj-bn-9MJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="s7g-ef-lbL"/>
+                        <segue destination="15T-4r-fYq" kind="relationship" relationship="viewControllers" id="eNn-yF-RQx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLp-up-C1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="118"/>
         </scene>
     </scenes>
     <resources>
+        <image name="moon.stars" catalog="system" width="124" height="128"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
