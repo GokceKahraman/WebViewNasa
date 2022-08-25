@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         let url = URL(string: "https://www.nasa.gov")!
         
-        webview.load(URLRequest(url: URL))
+        webview.load(URLRequest(url: url))
     }
 
 
